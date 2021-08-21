@@ -1,0 +1,155 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --cor: #117f2d;  
+    --corSombra:#0a4d2e;
+}
+
+body{
+    background-color: #F6CE4F ;
+
+}
+.player{
+    background-color: var(--corSombra);
+    height: 200px;
+    width: 140px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0%;
+    bottom: 0;
+    border: 10px solid black;
+    border-bottom: none;
+    border-radius: 60px 80px 0 0;
+    z-index: 2; 
+}
+.player:after{
+    content: "";
+    position: absolute;
+    width: 92%;
+    height: 86%;
+    background-color: var(--cor) ;
+    top: 2.5px;
+    left: 6px;
+    border-radius: 58% 70% 28% 42% / 28% 56% 88% 89%;
+}
+.pernas{
+    height: 50px;
+    width: 60px;
+    background-color: var(--corSombra);
+    position: absolute;
+    bottom: -50px;
+    left: -10px;
+    border: 10px solid black;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
+    z-index: 1;
+}
+.pernas:before{
+    content: "";
+    height: 45px;
+    width: 60px;
+    background-color: var(--corSombra);
+    position: absolute;
+    right: -90px;
+    border: 10px solid black;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
+}
+
+.pernas:after{
+    content: "";
+    height: 10px;
+    width: 55px;
+    background-color: black;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    border-radius: 0 0 10px 0;
+    
+} 
+.bolsa{
+    height: 120px;
+    width: 35px;
+    background-color: var(--cor);
+    border: 10px solid black;
+    position: absolute;
+    top: 65px;
+    left: -45px;
+    border-right: none;
+    border-radius: 20px 0 0 20px ;
+}
+.bolsa:before{
+    content:"";
+    height: 78px;
+    width: 26px;
+    background-color: var(--corSombra);
+    position: absolute;
+    bottom: -0.5px;
+    left: -1px;
+    border-radius: 12px 0 0 8px ;
+}
+.visor{
+    background-color: #225381;
+    height: 75px;
+    width: 110px;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    border: 10px solid black;
+    border-radius: 25px 50px 30px 30px;
+    z-index: 3;     
+}
+.visor:before{
+content:"";
+height: 65%;
+width: 85%;
+background-color: #71d4ec;
+position: absolute;
+top: 0;
+right: 0;
+border-radius: 0 28px 3px 30px ;
+}
+.visor:after{
+content:"";
+height: 22%;
+width: 45%;
+background-color: white;
+position: absolute;
+top: 5px;
+left: 39px;
+border-radius: 10px;
+ transform: rotate(6deg);
+}
+.sombra{
+height: 40px;
+width: 210px;
+background-color: rgba(153, 130, 0,0.2);
+position: absolute;
+bottom: -60px;
+right: -40px;
+border-radius: 50%;
+z-index: 0;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
